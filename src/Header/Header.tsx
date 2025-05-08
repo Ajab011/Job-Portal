@@ -1,7 +1,8 @@
 import { Avatar, Indicator } from "@mantine/core";
 import {  IconBell, IconSettings, IconWashDryW } from "@tabler/icons-react";
-
 import NavLinks from "./NavLinks";
+
+
 
 const  Header=()=>{ 
 return<div className="w-full bg-mine-shaft-900 px-6 text-white 
@@ -12,7 +13,7 @@ return<div className="w-full bg-mine-shaft-900 px-6 text-white
            WorkoNix
             </div>
          </div>
-        {NavLinks()}
+        <NavLinks />
     <div className="flex gap-2.5 items-center ">
            <div className="bg-mine-shaft-950 p-1.5 rounded-full">
             <IconSettings stroke={1.5}/>
@@ -24,7 +25,7 @@ return<div className="w-full bg-mine-shaft-900 px-6 text-white
          </div>
            
          <div className="flex items-center gap-1.5">
-         <Avatar src="avatar.png" alt="it's me" />
+         <Avatar src="avatar.png" alt="it's me"/>
             <div>Daisy</div>
          </div>
            
