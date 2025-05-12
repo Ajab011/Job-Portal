@@ -8,10 +8,10 @@ const NavLinks=()=>{
         {name:"About us",url:"about"}
     ]
     const location = useLocation();
-    return <div className="flex gap-5 text-mine-shaft-300 font-bold h-full items-center">
+    return <div className="flex gap-5 text-cyan-500  font-semibold text-xl h-full items-center">
         {
             links.map((link,index)=> 
-            <div className={`${location.pathname=="/"+link.url?"border-cyan-400 text-cyan-300":"border-transparent"}border-t-[3px] h-full flex items-center`}>
+            <div className={`${location.pathname=="/"+link.url?"border-cyan-100 text-cyan-100":"border-transparent"}border-t-[3px] h-full flex items-center`}>
                  <Link key={index} to={link.url} > {link.name} </Link>
                 </div>)
            

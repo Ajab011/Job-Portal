@@ -1,12 +1,15 @@
 import Header from "../Header/Header"
-import DreamJOb from "../LandingPage/Dreamjob"
+import Companies from "../LandingPage/Companies"
+import Dreamjob from "../LandingPage/Dreamjob"
+import JobCategory from "../LandingPage/JobCategory"
 
 const HomePage=()=>{
 return(
  <div className= "min-h-[100vh] bg-mine-shaft-950 font-['poppins']">
   <Header/>
-  <DreamJOb/>
-
+  <Dreamjob/>
+  <Companies/>
+  <JobCategory/>
 </div>
 )
 }
